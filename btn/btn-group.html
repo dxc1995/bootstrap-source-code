@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn</title>
+    <style>
+        * {margin: 0; padding: 0}
+
+        .btn-group {
+            display: flex;
+            justify-content: left; 
+            
+        }
+
+        .btn-group .btn {
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+            user-select: none;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        .btn-group .btn:hover {
+            background-color: #e6e5e6;
+        }
+
+        .btn-group .btn-default {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Center</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+</body>
+</html>
