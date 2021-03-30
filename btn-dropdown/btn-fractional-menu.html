@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn-group {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-group > .btn {
+            float: left;
+            padding: 6px 12px;
+            display: inline-block;
+            border-color: transparent;
+            cursor: pointer;
+        }
+
+        .btn-group > .btn-default {
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        .btn .caret {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: dashed;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+        }
+
+        .btn-group > .dropdown-toggle {
+            padding-right: 8px;
+            padding-left: 8px;
+            border-left: none;
+        }
+
+        .btn-group > .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            list-style: none;
+            border: 1px solid rgba(0,0,0,.15);
+            white-space: nowrap;
+            box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+            cursor: pointer;
+            margin: 2px 0 0;
+        }
+
+        .dropdown-menu li > a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            padding: 4px 20px;
+        } 
+
+        .dropdown-menu li > a:hover {
+            color: #fff;
+            background-color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li> <a href="#">Action</a></li>
+            <li> <a href="#">Another action</a></li>
+            <li> <a href="#">Something else here</a></li>
+            <li class="divder"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+</body>
+</html>
