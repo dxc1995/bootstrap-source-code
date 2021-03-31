@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">  
+        * {margin: 0; padding: 0}
+        .btn-group {
+            display: inline-block;
+            position: relative;
+            top: 100px;
+            left: 50%;
+        }
+
+        .dropup .dropdown-menu {
+            position: absolute;
+            bottom: 100%;
+            top: auto;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            border-color: transparent;
+            border-radius: 4px;
+            float: left;
+        }
+
+        .btn:first-child {
+            /* 去掉右上角圆角和右下角圆角 */
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .default {
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .caret {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 4px dashed;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+        }
+
+        .btn-group .dropdown-toggle {
+            padding: 6px 6px;
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            bottom: 0;
+            margin: 2px 0 0;
+            list-style: none;
+            border: 1px solid rgba(0,0,0,.15);
+            white-space: nowrap;
+            box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+        }
+
+        .dropdown-menu li.divider {
+            height: 1px;
+            margin: 2px 0;
+            background-color: #ccc;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 4px 18px;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ccc;
+        }
+
+        .dropdown-menu-right {
+            left: auto;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btn-group dropup">
+        <button class="btn default">default</button>
+        <button class="btn default dropdown-toggle">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Extra small button</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Toggle Dropdown</a></li>
+        </ul>
+    </div>
+</body>
+</html>
