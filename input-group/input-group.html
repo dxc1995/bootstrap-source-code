@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {margin: 0; padding: 0}
+        .input-group {
+             position: relative;
+             display: table;
+             border-collapse: separate;
+        }
+
+        .input-group .form-control {
+            position: relative;
+            z-index: 2;
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .input-group-addon,
+        .input-group .form-control {
+            display: table-cell;
+        }
+
+        .input-group-addon:not(:first-child):not(:last-child),
+        .input-group .form-control:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2">@example.com</span>
+      </div>
+      
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+      </div>
+      
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+</body>
+</html>
