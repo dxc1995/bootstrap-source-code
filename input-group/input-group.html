@@ -6,29 +6,53 @@
     <title>Document</title>
     <style type="text/css">
         * {margin: 0; padding: 0}
+
         .input-group {
-             position: relative;
-             display: table;
-             border-collapse: separate;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
-        .input-group .form-control {
-            position: relative;
-            z-index: 2;
-            float: left;
-            width: 100%;
-            margin-bottom: 0;
+        .input-group .input-group-addon, .input-group .form-control {
+          height: 38px;
+          margin-bottom: 10px;
+          vertical-align: middle;
+          box-sizing: border-box;
         }
 
-        .input-group-addon,
-        .input-group .form-control {
-            display: table-cell;
+        .input-group-addon {
+          min-width: 2%;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          color: #555;
+          background-color: #eeeeee;
+          border-radius: 4px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
         }
 
-        .input-group-addon:not(:first-child):not(:last-child),
-        .input-group .form-control:not(:first-child):not(:last-child) {
-            border-radius: 0;
+        .input-group-addon:last-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
         }
+
+        .form-control {
+          min-width: 50%;
+          padding: 0 3px;
+          border: 1px solid #cdcccc;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+
+        .form-control:focus {
+          outline: none;
+          border:none;
+          border:1px solid red;
+          border-color: #66afe9;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        }
+
 
     </style>
 </head>
@@ -36,7 +60,7 @@
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">@</span>
         <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-      </div>
+    </div>
       
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
@@ -49,7 +73,6 @@
         <span class="input-group-addon">.00</span>
       </div>
       
-      <label for="basic-url">Your vanity URL</label>
       <div class="input-group">
         <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
