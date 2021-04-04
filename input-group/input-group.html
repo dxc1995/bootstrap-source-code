@@ -13,6 +13,24 @@
           align-items: center;
         }
 
+        .input-group-lg .input-group-addon{
+          font-size: 18px;
+          padding: 10px 16px;
+        }
+
+        .input-group-lg .input-group-addon, .input-group-lg .form-control {
+          height: 46px !important;
+        }
+
+        .input-group-sm .input-group-addon {
+          padding: 5px 10px;
+        }
+
+        .input-group-sm .input-group-addon, .input-group-sm .form-control {
+          height: 30px !important;
+          font-size: 12px;
+        }
+
         .input-group .input-group-addon, .input-group .form-control {
           height: 38px;
           margin-bottom: 10px;
@@ -57,7 +75,7 @@
     </style>
 </head>
 <body>
-    <div class="input-group">
+    <div class="input-group input-group-lg">
         <span class="input-group-addon" id="basic-addon1">@</span>
         <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
     </div>
@@ -67,7 +85,7 @@
         <span class="input-group-addon" id="basic-addon2">@example.com</span>
       </div>
       
-      <div class="input-group">
+      <div class="input-group input-group-sm">
         <span class="input-group-addon">$</span>
         <input type="text" class="form-control">
         <span class="input-group-addon">.00</span>
